@@ -84,17 +84,13 @@ class NFCReader: NSObject, ObservableObject , NFCNDEFReaderSessionDelegate {
     
     
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
+       
         
     }
     
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
+       
         
     }
-    
-    
-    
-    
-    
-    
-    
+
 }
