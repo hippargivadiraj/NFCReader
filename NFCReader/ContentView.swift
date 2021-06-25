@@ -6,11 +6,23 @@
 //
 
 import SwiftUI
+import CoreNFC
 
 struct ContentView: View {
+    
+@State var writer = NFCReader()
+@State var urlT = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            TextField("TextEntry", text: $urlT)
+            Button(action: {
+                writer.scan(data: urlT)
+                
+            }, label: {
+                Text("Write To Tag")
+            }).padding()
+        }
     }
 }
 

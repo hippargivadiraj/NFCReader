@@ -11,6 +11,8 @@
 		BCEB95AA268590EF00099176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB95A9268590EF00099176 /* ContentView.swift */; };
 		BCEB95AC268590F000099176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEB95AB268590F000099176 /* Assets.xcassets */; };
 		BCEB95AF268590F000099176 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEB95AE268590F000099176 /* Preview Assets.xcassets */; };
+		BCEB95B82685970900099176 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB95B72685970900099176 /* NFCReader.swift */; };
+		BCEB95BA2685C44B00099176 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEB95B92685C44B00099176 /* ReadMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		BCEB95AB268590F000099176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEB95AE268590F000099176 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCEB95B0268590F000099176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEB95B62685964900099176 /* NFCReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCReader.entitlements; sourceTree = "<group>"; };
+		BCEB95B72685970900099176 /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
+		BCEB95B92685C44B00099176 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +57,14 @@
 		BCEB95A6268590EF00099176 /* NFCReader */ = {
 			isa = PBXGroup;
 			children = (
+				BCEB95B62685964900099176 /* NFCReader.entitlements */,
 				BCEB95A7268590EF00099176 /* NFCReaderApp.swift */,
 				BCEB95A9268590EF00099176 /* ContentView.swift */,
+				BCEB95B72685970900099176 /* NFCReader.swift */,
 				BCEB95AB268590F000099176 /* Assets.xcassets */,
 				BCEB95B0268590F000099176 /* Info.plist */,
 				BCEB95AD268590F000099176 /* Preview Content */,
+				BCEB95B92685C44B00099176 /* ReadMe.swift */,
 			);
 			path = NFCReader;
 			sourceTree = "<group>";
@@ -139,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEB95AA268590EF00099176 /* ContentView.swift in Sources */,
+				BCEB95BA2685C44B00099176 /* ReadMe.swift in Sources */,
 				BCEB95A8268590EF00099176 /* NFCReaderApp.swift in Sources */,
+				BCEB95B82685970900099176 /* NFCReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCReader/NFCReader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NFCReader/Preview Content\"";
 				DEVELOPMENT_TEAM = P2M8F2R7BZ;
@@ -289,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCReader/NFCReader.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NFCReader/Preview Content\"";
 				DEVELOPMENT_TEAM = P2M8F2R7BZ;
