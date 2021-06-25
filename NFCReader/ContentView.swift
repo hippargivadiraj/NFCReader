@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            TextField("TextEntry", text: $urlT)
+            TextField("Enter URL Here", text: $urlT)
             Button(action: {
                 writer.scan(data: urlT)
                 
